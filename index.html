@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito de Compras - Tienda de Skincare</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/ratita.jpeg" id="logo" width="30%" height="50%" alt="Logotipo de la tienda de skincare">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="img/cart.png" id="img-carrito" alt="Icono de carrito de compras">
+                        <div id="carrito"> 
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="javascript:void(0)" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h1>Productos de Skincare</h1>
+                        <p>Búsqueda de Productos</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="¿Qué producto estás buscando?" id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <a href="index.html">1. Productos Koreanos</a>
+                </div>
+                <div class="four columns icono icono2">
+                    <a href="americanos.html">1. Productos Americanos</a>
+                </div>
+                <div class="four columns icono icono3">
+                     <a href="contactos.html">3. Contactos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h2 id="encabezado" class="encabezado">Nuestros Productos Koreanos</h2>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+
+                    <img src="img/koreano1.jpg" class="imagen-curso u-full-width" alt="Serum Acido Hialuronico 7% The Ordinary">
+                    
+                    <div class="info-card">
+                        <h4>Anua Juego de 3 pasos para principiantes de piel de vidrio, doble limpieza con suero facial,</h4>
+                        <p>The Ordinary</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano2.jpg" class="imagen-curso u-full-width" alt="Crema gel de Neutrogena">
+                    <div class="info-card">
+                        <h4>JiYu Almohadillas de esmalte tonificante – Cuidado de la piel coreano para manchas oscuras</h4>
+                        <p>Nutrogena</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano4.jpg" class="imagen-curso u-full-width" alt="Serum de La Roche Possay">
+                    <div class="info-card">
+                        <h4>KAHI - Wrinkle Bounce Multi Balm, bálsamo hidratante todo en uno, crema para ojos, crema</h4>
+                        <p> La Roche Possay</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano5.jpg" class="imagen-curso u-full-width" alt="Vitamina C de Roland">
+                    <div class="info-card">
+                        <h4>ANUA Heartleaf - Espuma limpiadora profunda de poros de quercetinol, limpiador facial</h4>
+                        <p>Roland</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano6.jpg" class="imagen-curso u-full-width" alt="Crema de sábila de Generics">
+                    <div class="info-card">
+                        <h4>medicube Crema de gelatina de colágeno, niacinamida y colágeno hidrolizado liofilizado, aumenta</h4>
+                        <p>Generics</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano7.jpg" class="imagen-curso u-full-width" alt="Crema de aloe vera Coreana">
+                    <div class="info-card">
+                        <h4>BIODANCE Máscara profunda real de bio-colágeno, máscara de hidrogel hidratante</h4>
+                        <p>Koreano</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano8.jpg" class="imagen-curso u-full-width" alt="Crema de aloe vera Coreana">
+                    <div class="info-card">
+                        <h4>Medicube Zero Pore Pads 2.0, almohadillas de tóner facial de doble textura para exfoliación</h4>
+                        <p>Koreano</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+        <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano9.jpg" class="imagen-curso u-full-width" alt="Crema de aloe vera Coreana">
+                    <div class="info-card">
+                        <h4>Anua Heartleaf Aceite limpiador para control de poros, limpiador de aceite para cara,</h4>
+                        <p>Koreano</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/koreano10.jpg" class="imagen-curso u-full-width" alt="Set de Skincare de The Ordinary">
+                    <div class="info-card">
+                        <h4>Medicube - Crema tipo jalea con niacinamida y colágeno hidrolizado y liofilizado</h4>
+                        <p>The Ordinary</p>
+                        <img src="img/estrellas.png" alt="Calificación de 5 estrellas">
+                        <p class="precio">
+                            <del>$200</del> 
+                            <span class="u-pull-right nuevo-precio">$15</span>
+                        </p>
+                        <a href="javascript:void(0)" class="u-full-width button-primary button agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">¿Quienes Somos?</a>
+                        <a class="enlace" href="#">Ayuda</a>
+                        <a class="enlace" href="#">Soporte</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">Misión</a>
+                        <a class="enlace" href="#">Empleo</a>
+                        <a class="enlace" href="#">Blog</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+
+</body>
+</html>
